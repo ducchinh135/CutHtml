@@ -8,49 +8,27 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body class="container">
 
     <!-- ----------------------------  Navigation ---------------------------------------------- -->
     <header>
-        <nav class="nav">
-            <div class="nav-menu flex-row">
-                <div class="nav-brand">
-                    <a href="#" class="text-gray">logoipsum</a>
-                </div>
-                <div>
-                    <ul class="nav-items">
-                        <a href="#">
-                            <li class="nav-link">
-                                Home
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="nav-link">
-                                Feature
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="nav-link">
-                                Pricing
-                            </li>
-                        </a>
-                        <a href="#">
-                            <li class="nav-link">
-                                Blog
-                            </li>
-                        </a>
-                    </ul>
-                </div>
+        <nav class="header d-flex justify-content-between align-items-center">
+            <a href="./index.html" class="logo">
+                <img src="./img/logo.png" alt="logo">
+            </a>
 
-                <div class="header-btn">
-                    <button class="btn">
-                        Get Started
-                    </button>
-                </div>
-            </div>
+            <ul class="menu d-flex align-item-center">
+                <li class="menu-item"><a href="#" class="menu-link active">Home</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Feature</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Pricing</a></li>
+                <li class="menu-item"><a href="#" class="menu-link">Blog</a></li>
+            </ul>
+
+            <a href="#" class="btn btn-cta">Get Started</a>
         </nav>
     </header>
 
@@ -61,24 +39,201 @@
     <main>
 
         <!------------------------ Site Title ---------------------->
-        <section class="site-title">
-            <div class="site-title__left">
-                <h1>Grow your subscription business</h1>
-                <p>Outcome-centered products that reduce churn, optimize pricing, and grow your subscription business
-                    end-to-end.</p>
-                <button class="btn">
-                    Get Started
-                </button>
-            </div>
-
-            <div class="site-title__right">
-
+        <section class="block block-banner">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="banner-left">
+                        <h2 class="block-title banner-title">
+                            Grow your
+                            subscription
+                            business
+                        </h2>
+                        <p class="block-desc banner-desc">
+                            Outcome-centered products that reduce churn, optimize pricing, and grow your
+                            subscription business end-to-end.
+                        </p>
+                        <a href="#" class="block-link banner-link btn">Get Started</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="banner-right">
+                        <div class="banner-img">
+                            <img src="./img/site-left.png" alt="banner" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-------------x---------- Site Title ------------x--------->
 
+        <!------------------------ Content ---------------------->
+
+        <section class="block block-brand">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="brand-list d-flex align-items-center w-100">
+                        <li><a href="#"><img src="./img/brand1.png" alt="brand"></a></li>
+                        <li><a href="#"><img src="./img/brand2.png" alt="brand"></a></li>
+                        <li><a href="#"><img src="./img/brand3.png" alt="brand"></a></li>
+                        <li><a href="#"><img src="./img/brand4.png" alt="brand"></a></li>
+                        <li><a href="#"><img src="./img/brand5.png" alt="brand"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="block block-subscription">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="subscription-left">
+                        <div class="subscription-img">
+                            <img src="./img/subcription.png" alt="subscription" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="subscription-right">
+                        <h2 class="block-title subscription-title">
+                            Subscription index
+                        </h2>
+                        <p class="block-desc subscription-desc">
+                            A daily dataset to keep you up to date on subscription market trends and what's
+                            happening in your vertical.
+                        </p>
+                        <a href="#" class="block-link">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block block-depth">
+            <div class="row">
+                <div class="col-md-5 d-flex align-items-center">
+                    <div class="depth-left">
+                        <h2 class="block-title depth-title">
+                            In-depth metrics
+                        </h2>
+                        <p class="block-desc depth-desc">
+                            Accurate, real-time reporting at your fingertips. Getting data has never been easier.
+                        </p>
+                        <a href="#" class="block-link depth-link">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 ml-auto">
+                    <div class="depth-img">
+                        <img src="./img/depth.png" alt="depth" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block block-feature">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="./img/card.png" alt="card">
+                        </div>
+                        <h3 class="feature-title">Benchmarks</h3>
+                        <p class="feature-desc">
+                            See how you stack up against comparable companies in similar stages.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="./img/caculator.png" alt="caculator">
+
+                        </div>
+                        <h3 class="feature-title">Pricing Audit</h3>
+                        <p class="feature-desc">
+                            Benchmark the health of your monetization and pricing strategy.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <img src="./img/camera.png" alt="camera">
+                        </div>
+                        <h3 class="feature-title">Retention Audit</h3>
+                        <p class="feature-desc">
+                            Audit where revenue leakage exists and where you can increase retention.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="block block-price">
+            <div class="row custom-row">
+                <div class="col-md-6">
+                    <h2 class="block-title price-title">
+                        Get the right plan for future product.
+                    </h2>
+                </div>
+                <div class="col-md-4 ml-auto d-flex align-items-center">
+                    <div class="price-tab">
+                        <button class="btn tab-item active">Yearly</button>
+                        <button class="btn tab-item">Monthly</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row custom-row">
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="pricing-item w-100">
+                        <div class="pricing-label">Starter</div>
+                        <div class="pricing-title">Free</div>
+                        <ul class="pricing-desc">
+                            <li>1 Website</li>
+                            <li>5 GB Hosting</li>
+                            <li>Limited Support</li>
+                        </ul>
+                        <a href="#" class="pricing-link">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="pricing-item feature">
+                        <div class="pricing-label">Premium</div>
+                        <div class="pricing-title">$29<span class="pricing-small">/month</span></div>
+                        <ul class="pricing-desc">
+                            <li>10 Website</li>
+                            <li>15 GB Hosting</li>
+                            <li>Premium Support</li>
+                        </ul>
+                        <a href="#" class="pricing-link">Get Started</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 d-flex align-items-center">
+                    <div class="pricing-item w-100">
+                        <div class="pricing-label">Enterprise</div>
+                        <div class="pricing-title">$49<span class="pricing-small">/month</span></div>
+                        <ul class="pricing-desc">
+                            <li>Unlimited Website</li>
+                            <li>50 GB Hosting</li>
+                            <li>Premium Support</li>
+                        </ul>
+                        <a href="#" class="pricing-link">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!------------------------ Content ---------------------->
+
     </main>
     <!---------------x------------- Main Site Section ----------------x------------->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
